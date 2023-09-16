@@ -39,7 +39,7 @@ def predict():
     else:
         predicted_result = "Customer is unlikely to subscribe"
     
-    return render_template('index.html',predicted_result = predicted_result)
+    return render_template('prediction.html',predicted_result = predicted_result)
 
 if __name__ == '__main__':
-    app.run(debug = True)
+    app.run(host='0.0.0.0', port=8080)
